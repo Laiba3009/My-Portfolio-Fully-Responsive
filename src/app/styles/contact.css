@@ -1,0 +1,75 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.con-tittle{
+    padding-left:6px;
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.form-cont{
+    width: 70%;
+    height: 400px;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+    border: 1px solid deepskyblue;
+    border-radius: 5px;
+
+}
+.msg{
+    padding-bottom: 100px;
+}
+.btn-sub{
+    padding: 10px 15px 10px 15px;
+    background-color: deepskyblue;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-left: 7px;
+}
+.btn-sub:hover{
+background-color: rgb(91, 147, 165);
+color:aliceblue;
+transition: all .40s ease;
+}
+@media screen and (min-width:440px) and (max-width:750px) {
+
+    input{
+        padding: 15px;
+        margin: 10px;
+        background-color: white;
+        border: 1px solid deepskyblue;
+        border-radius: 5px;
+    }
+    .form-cont{
+        width: 80%;
+        height: 600px;
+    }
+    .con-tittle{
+        padding-left:6px;
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .contact{
+        height: 700px;
+
+    }
+}
