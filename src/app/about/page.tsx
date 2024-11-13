@@ -3,7 +3,6 @@ import "../styles/about.css"
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 
 
