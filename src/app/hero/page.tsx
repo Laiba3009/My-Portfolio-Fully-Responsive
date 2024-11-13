@@ -25,7 +25,7 @@ function Hero(){
          <span> Front-End </span> Developer
      </h1>
       <p>I build beautiful responsive scalable functional websites.
-        Explore my porfoilo to see  my work in action and let's connect to build something amazing together!</p>
+        Explore my portfoilo to see  my work in action and lets connect to build something amazing together!</p>
        <div className="link-icon">
        <a href="https://github.com/Laiba3009">
        <FaGithub  className="git-icon"/>
