@@ -23,20 +23,20 @@ function Hero(){
         I am Laiba <br />
          <span> Front-End </span> Developer
      </h1>
-      <p>I build beautiful responsive, scalable, functional websites.
+      <p>I build beautiful responsive scalable functional websites.
         Explore my porfoilo to see  my work in action and let's connect to build something amazing together!</p>
-       <div className='link-icon'>
+       <div className="link-icon">
        <a href="https://github.com/Laiba3009">
-       <FaGithub  className='git-icon'/>
+       <FaGithub  className="git-icon"/>
        </a>
        <a href="https://www.instagram.com/laibajaweed8?igsh=MWZuYmVrcHA2eHR6Ng==">
-       <FaInstagram  className='insta-icon'/>
+       <FaInstagram  className="insta-icon"/>
        </a>
        <a href="https://www.facebook.com/profile.php?id=61550887534337&mibextid=ZbWKwL">
-       <FaFacebook className='facebook-icon ' />
+       <FaFacebook className="facebook-icon " />
        </a>
        </div>
-       <div> <button className='btn'>Connect Me</button></div>
+       <div> <button className="btn">Connect Me</button></div>
         </div>
         </div>
         </div>
