@@ -11,3 +11,19 @@ export default [
   pluginJs.configs.recommended,
   pluginReact.configs.flat.recommended,
 ];
+module.exports = {
+  reactStrictMode: true,
+  eslint: {
+    dirs: ['pages', 'components', 'lib'], // List your directories to lint here
+  },
+  
+    "compilerOptions": {
+      "module": "ESNext",
+      "moduleResolution": "Node"
+    }
+  }
+  
+
+
+ 
+

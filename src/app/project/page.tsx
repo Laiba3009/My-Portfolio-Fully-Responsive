@@ -33,7 +33,7 @@ function Project(){
        height={300}
         />
         <h3 className="box-nam">Virtual Assistant</h3>
-        <p>Alexa, your virtual assistant built with HTML, CSS and JavaScript.
+        <p>Alexa your virtual assistant built with HTML CSS and JavaScript.
          Alexa is a powerful tool designed.
         </p>
         <a  className="click" href="https://github.com/Laiba3009/My-Virtual-Assistant">
@@ -51,7 +51,7 @@ function Project(){
        height={300}
         />
         <h3 className="box-nam">Portfolio</h3>
-        <p>My Portfolio fully responsive Animation creating a HTML CSS and JAVASCRIPT website .</p>
+        <p>My Portfolio fully responsive Animation creating a HTML CSS and JAVASCRIPT website.</p>
         <a  className="click" href="https://github.com/Laiba3009/My-Portfolio">
         <FaGithub  className='p-icon'/>
         </a>
