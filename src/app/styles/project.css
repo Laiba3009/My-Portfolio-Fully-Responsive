@@ -1,7 +1,6 @@
-/* General Styles */
 .box-cont {
     width: 100%;
-    height: auto;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,14 +50,20 @@
     padding: 10px;
     text-align: center;
 }
-
+.pro-icon{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
 .p-icon {
     font-size: 35px;
     color: black;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: right;
     margin-bottom: 10px;
+    margin: 20px;
+
 }
 
 .p-icon:hover {
@@ -69,10 +74,6 @@
 .click {
     margin-left: 0;
 }
-
-/* Media Queries for Responsiveness */
-
-/* Mobile Devices (width < 768px) */
 @media screen and (max-width: 768px) {
     .pro-text {
         font-size: 2rem;

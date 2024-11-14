@@ -39,7 +39,7 @@
 }
 
 .about-text p {
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: 400;
     padding: 10px;
 }
@@ -75,10 +75,6 @@
 .facebook-icon {
     color: rgb(50, 50, 228);
 }
-
-/* Media Queries for Different Screen Sizes */
-
-/* Mobile (width < 768px) */
 @media screen and (max-width: 768px) {
     .about {
         flex-direction: column;
@@ -125,8 +121,6 @@
         font-size: 30px;
     }
 }
-
-/* Tablet (width < 1024px) */
 @media screen and (max-width: 1024px) {
     .about {
         flex-direction: column;
@@ -157,8 +151,6 @@
         font-size: 1.5rem;
     }
 }
-
-/* Large Screens (width >= 1024px) */
 @media screen and (min-width: 1024px) {
     .about {
         display: flex;
