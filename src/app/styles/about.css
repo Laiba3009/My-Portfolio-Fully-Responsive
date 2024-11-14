@@ -1,96 +1,204 @@
-.about{
+/* General Styles */
+.about {
     width: 100%;
     height: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px 20px;
 }
-.about-sect{
+
+.about-sect {
     width: 80%;
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.text{
+
+.about-imag {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.text {
     width: 70%;
     height: 300px;
     padding-right: 50px;
-    margin-right: 3rem ;
-
+    margin-right: 3rem;
 }
-.about-text{
+
+.about-text {
     display: flex;
     justify-content: start;
     align-items: center;
     font-size: 3rem;
     margin: 2rem;
 }
-.about-text p{
+
+.about-text p {
     font-size: 30px;
     font-weight: 400;
     padding: 10px;
 }
-.link-icon{
-    width: 300px ;
+
+.link-icon {
+    width: 300px;
     height: 20px;
     padding: 20px;
 }
-.git-icon{
+
+.git-icon,
+.insta-icon,
+.facebook-icon {
     font-size: 40px;
     padding-right: 10px;
+    transition: font-size 0.4s ease;
+}
+
+.git-icon:hover,
+.insta-icon:hover,
+.facebook-icon:hover {
+    font-size: 50px;
+}
+
+.git-icon {
     color: black;
 }
 
-.insta-icon{
-    font-size: 40px;
-    color:  crimson;
-    padding-right: 10px;
+.insta-icon {
+    color: crimson;
 }
-.facebook-icon{
-    font-size: 40px;
+
+.facebook-icon {
     color: rgb(50, 50, 228);
-    padding-right: 10px;
+}
 
-}
-.git-icon:hover{
-    font-size: 50px;
-    transition: all .40s ease;
-}
-.insta-icon:hover{
-    font-size: 50px;
-    transition: all .40s ease;
-}.facebook-icon:hover{
-    font-size: 50px;
-    transition: all .40s ease;
-}
-@media screen and (min-width:475px){
-      .about-sect{
-        padding: 10px;
-    }
-    .about{
-        display: flex;
+/* Media Queries for Different Screen Sizes */
+
+/* Mobile (width < 768px) */
+@media screen and (max-width: 768px) {
+    .about {
         flex-direction: column;
-        height: 1000px;
         padding-bottom: 3rem;
-
+        margin-top: 3rem;
     }
-    .about-imag{
+
+    .about-sect {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-imag {
         width: 300px;
         height: 300px;
         margin-top: 0;
     }
-    .about-text p{
-         font-size: 2rem;
-         font-weight: 300;
 
-        }
-    .text{
-        margin: 30px;
+    .text {
+        width: 80%;
+        margin: 20px auto;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .about-text {
+        font-size: 2rem;
+    }
+
+    .about-text p {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    .link-icon {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .link-icon a {
+        margin: 0 10px;
+        font-size: 30px;
+    }
+}
+
+/* Tablet (width < 1024px) */
+@media screen and (max-width: 1024px) {
+    .about {
+        flex-direction: column;
+        padding-bottom: 3rem;
+    }
+
+    .about-sect {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .about-imag {
+        width: 350px;
+        height: 350px;
+    }
+
+    .text {
+        width: 75%;
+        margin-top: 20px;
+        padding-right: 0;
+    }
+
+    .about-text {
+        font-size: 2.5rem;
+    }
+
+    .about-text p {
+        font-size: 1.5rem;
+    }
+}
+
+/* Large Screens (width >= 1024px) */
+@media screen and (min-width: 1024px) {
+    .about {
+        display: flex;
+        flex-direction: row;
+        padding: 50px 20px;
+    }
+
+    .about-sect {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .about-imag {
+        width: 500px;
+        height: 500px;
+    }
+
+    .text {
+        width: 60%;
         margin-top: 0;
     }
-    .pra-text{
-        font-size: 20px;
 
+    .about-text {
+        font-size: 3rem;
+    }
+
+    .about-text p {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .link-icon {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+
+    .link-icon a {
+        margin-right: 15px;
+        font-size: 40px;
     }
 }

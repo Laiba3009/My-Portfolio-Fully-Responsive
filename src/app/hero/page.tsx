@@ -15,10 +15,10 @@ function Hero(){
         <div className='hero'> 
       <Image className="hero-imag" src={"/image/hero.png"} 
        alt="hero image" 
-       width={500}
-       height={450}
+       width={550}
+       height={500}
         />
-        </div>
+        
         <div className="center-text">
        <h1>
         I am Laiba <br />
@@ -37,11 +37,11 @@ function Hero(){
        <FaFacebook className="facebook-icon " />
        </a>
        </div>
-       <div> <button className="btn">Connect Me</button></div>
+       <button className="btn">Connect Me</button>
         </div>
         </div>
         </div>
-       
+        </div>
     )
 }
           

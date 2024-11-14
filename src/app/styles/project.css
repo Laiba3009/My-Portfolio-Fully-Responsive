@@ -1,96 +1,165 @@
-.box-cont{
+/* General Styles */
+.box-cont {
     width: 100%;
-    height: 500px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap:wrap ;
+    flex-wrap: wrap;
     padding: 20px;
     margin: 2rem;
 }
-.pro-text{
+
+.pro-text {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 3rem;
     margin-top: 3rem;
     padding-top: 40px;
+    font-family: sans-serif;
 }
-.box{
+
+.box {
     width: 370px;
     height: 500px;
     background-color: #fff;
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin: 10px;
-}
-.box:hover{
-    background-color: deepskyblue;
-    transition: all .40s ease;
-    height: 520px;
-}
-.box-nam{
-    font-size: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: all .4s ease;
 }
 
-.box p{
+.box:hover {
+    background-color: deepskyblue;
+    height: 520px;
+}
+
+.box-nam {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.box p {
     font-size: 17px;
     color: rgb(34, 33, 33);
     font-family: sans-serif;
     padding: 10px;
+    text-align: center;
 }
-.p-icon{
-    font-size:35px;
+
+.p-icon {
+    font-size: 35px;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
-.click{
+.p-icon:hover {
+    font-size: 45px;
+    transition: all .4s ease;
+}
+
+.click {
     margin-left: 0;
-      }
-      .p-icon:hover{
-        font-size: 45px ;
-      }
-    
-@media screen and (min-width:475px) {
-    .pro-text{
-        
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Devices (width < 768px) */
+@media screen and (max-width: 768px) {
+    .pro-text {
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+
+    .box-cont {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .box {
+        width: 90%;
+        height: auto;
+        margin: 10px 0;
+        background-color: none;
+    }
+
+    .box:hover {
+        height: auto;
+    }
+
+    .box-nam {
+        font-size: 1.5rem;
+    }
+
+    .box p {
+        font-size: 14px;
+    }
+
+    .box-imag {
+        width: 100%;
+        height: 200px;
+    }
+
+    .p-icon {
+        font-size: 30px;
+    }
+}
+
+/* Tablet Devices (width < 1024px) */
+@media screen and (max-width: 1024px) {
+    .pro-text {
         font-size: 2.5rem;
-        font-family: sans-serif;
         margin-top: 80px;
     }
-    .box{
-        margin-top: 0;
+
+    .box {
+        margin-top: 20px;
         width: 340px;
         height: 430px;
         margin-right: 50px;
-        background-color: none;
     }
-    .box:hover{
-        height: 450px;
 
+    .box p {
+        font-size: 16px;
     }
-    .box p{
-        font-size: 19px;
-        color: rgb(34, 33, 33);
-        font-family: sans-serif;
-        padding: 10px;
-    }
-    .box-imag{
-        width: 350px;
+
+    .box-imag {
+        width: 100%;
         height: 200px;
     }
-    .box-cont{
-        height: 100%;
+}
+
+/* Large Screens (width >= 1024px) */
+@media screen and (min-width: 1024px) {
+    .box-cont {
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
         align-items: center;
-        margin-left: 0;
     }
-    .pp-tex{
-        font-size: 20px;
+
+    .box {
+        width: 370px;
+        height: 500px;
+        margin: 15px;
+        transition: all .4s ease;
+    }
+
+    .box:hover {
+        height: 520px;
+    }
+
+    .box p {
+        font-size: 17px;
     }
 }
