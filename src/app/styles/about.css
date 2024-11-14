@@ -41,11 +41,7 @@
     padding-right: 10px;
     color: black;
 }
-.linkdin-icon{
-    font-size: 40px;
-    color: rgb(50, 50, 228);
-    padding-right: 10px;
-}
+
 .insta-icon{
     font-size: 40px;
     color:  crimson;
@@ -68,21 +64,15 @@
     font-size: 50px;
     transition: all .40s ease;
 }
-@media screen and (min-width:400px) and (max-width:750px) {
+@media screen and (min-width:475px){
       .about-sect{
-
         padding: 10px;
-        margin-bottom: 30px;
-        margin-top: 3rem;
-
-
     }
     .about{
         display: flex;
         flex-direction: column;
-        height: 1300px;
+        height: 1000px;
         padding-bottom: 3rem;
-        background-color: blue;
 
     }
     .about-imag{
@@ -91,11 +81,16 @@
         margin-top: 0;
     }
     .about-text p{
-         font-size: 15px;
+         font-size: 2rem;
          font-weight: 300;
+
         }
     .text{
         margin: 30px;
         margin-top: 0;
+    }
+    .pra-text{
+        font-size: 20px;
+
     }
 }

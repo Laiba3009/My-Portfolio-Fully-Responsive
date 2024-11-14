@@ -18,7 +18,7 @@ function Project(){
        height={300}
         />
         <h3 className="box-nam">Countdown Timer</h3>
-        <p>A Next.js  and Typescript powered  website to truck time with an interactive countdown feature</p>
+        <p className="pp-tex">A Next.js  and Typescript powered  website to truck time with an interactive countdown feature</p>
         <a className="click" href="https://github.com/Laiba3009/Countdown-Timer-Project">
         <FaGithub  className='p-icon'/>
         </a>
@@ -33,7 +33,7 @@ function Project(){
        height={300}
         />
         <h3 className="box-nam">Virtual Assistant</h3>
-        <p>Alexa your virtual assistant built with HTML CSS and JavaScript.
+        <p className="pp-tex">Alexa your virtual assistant built with HTML CSS and JavaScript.
          Alexa is a powerful tool designed.
         </p>
         <a  className="click" href="https://github.com/Laiba3009/My-Virtual-Assistant">
@@ -51,7 +51,7 @@ function Project(){
        height={300}
         />
         <h3 className="box-nam">Portfolio</h3>
-        <p>My Portfolio fully responsive Animation creating a HTML CSS and JAVASCRIPT website.</p>
+        <p className="pp-tex">My Portfolio fully responsive Animation creating a HTML CSS and JAVASCRIPT website.</p>
         <a  className="click" href="https://github.com/Laiba3009/My-Portfolio">
         <FaGithub  className='p-icon'/>
         </a>

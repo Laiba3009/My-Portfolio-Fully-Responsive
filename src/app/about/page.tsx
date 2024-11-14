@@ -19,7 +19,7 @@ function About() {
       </div>
       <div className="text">
         <h2 className="about-text">About Me</h2>
-        <p>
+        <p className="pra-text">
           I am a Frontend Developer with a passion for creating high-quality,
           responsive, and scalable websites. With a strong foundation in HTML,
           CSS, and TypeScript, Next.js. I am a student at GIAIC, pursuing a
