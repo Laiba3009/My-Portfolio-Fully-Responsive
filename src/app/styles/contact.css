@@ -1,3 +1,4 @@
+/* General Contact Form Styles */
 .contact {
     display: flex;
     justify-content: center;
@@ -29,7 +30,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 600px;  
+    max-width: 600px;
 }
 
 input, textarea {
@@ -42,13 +43,13 @@ input, textarea {
 }
 
 textarea {
-    height: 300px; 
+    height: 300px;
     resize: none;
 }
 
 .btn-sub {
     padding: 13px 15px;
-    background-color:dodgerblue;
+    background-color: dodgerblue;
     border: none;
     border-radius: 10px;
     font-size: 20px;
@@ -64,6 +65,8 @@ textarea {
     background-color: rgb(149, 218, 241);
     color: aliceblue;
 }
+
+/* Mobile Styles */
 @media screen and (max-width: 768px) {
     .contact {
         flex-direction: column;
@@ -71,12 +74,12 @@ textarea {
     }
 
     .form-cont {
-        width: 100%;
+        width: 90%;  /* Increase form width for better visibility */
         height: auto;
     }
 
     .con-tittle {
-        font-size: 2rem;
+        font-size: 2.2rem;  /* Adjust title font size for mobile */
         padding-left: 10px;
     }
 
@@ -86,13 +89,13 @@ textarea {
     }
 
     .btn-sub {
-        width: 80%;
+        width: 80%;  /* Button takes up more space on mobile */
         font-size: 18px;
         padding: 12px 20px;
     }
 
     input, textarea {
-        font-size: 14px;
+        font-size: 14px;  /* Reduce font size for smaller screens */
     }
 
     .contact {
@@ -101,9 +104,10 @@ textarea {
     }
 }
 
+/* Tablet Styles */
 @media screen and (max-width: 1024px) {
     .form-cont {
-        width: 80%;
+        width: 80%;  /* Form should occupy more width on tablets */
         height: auto;
     }
 
@@ -112,7 +116,7 @@ textarea {
     }
 
     .btn-sub {
-        width: 60%;
+        width: 60%;  /* Make button slightly smaller on tablet */
         font-size: 18px;
         padding: 12px 18px;
     }
@@ -124,9 +128,10 @@ textarea {
     }
 }
 
+/* Desktop Styles */
 @media screen and (min-width: 1024px) {
     .form-cont {
-        width: 50%;
+        width: 50%;  /* Center the form on larger screens */
     }
 
     .con-tittle {
@@ -134,7 +139,7 @@ textarea {
     }
 
     .btn-sub {
-        width: 50%;
+        width: 50%;  /* Button width adjusts on large screens */
         font-size: 20px;
     }
 }

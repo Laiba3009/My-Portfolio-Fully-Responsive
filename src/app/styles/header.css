@@ -71,13 +71,7 @@
         transition: all .40s ease;
     }
 
-    /* Hamburger menu styles for mobile */
-    .hamburger {
-        display: block;
-        font-size: 30px;
-        color: black;
-        cursor: pointer;
-    }
+   
 }
 
 @media screen and (max-width: 1024px) {
@@ -127,6 +121,33 @@
         width: 50%;
     }
 
+    .nav-link {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .Logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .nav-link:hover {
+        color: white;
+        font-size: 18px;
+        transition: all .40s ease;
+    }
+}
+@media screen and (max-width: 4780px) {
+    .header {
+        height: 80px;
+        padding: 0 30px;
+    }
+
+    .header-link {
+        display: flex;
+        justify-content: space-evenly;
+        width: 50%;
+    }
     .nav-link {
         font-size: 20px;
         font-weight: 600;

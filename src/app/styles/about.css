@@ -55,13 +55,13 @@
 .facebook-icon {
     font-size: 40px;
     padding-right: 10px;
-    transition: font-size 0.4s ease;
+    transition: transform 0.3s ease;
 }
 
 .git-icon:hover,
 .insta-icon:hover,
 .facebook-icon:hover {
-    font-size: 50px;
+    transform: scale(1.2);
 }
 
 .git-icon {
@@ -75,11 +75,14 @@
 .facebook-icon {
     color: rgb(50, 50, 228);
 }
+
+/* Mobile Styles */
 @media screen and (max-width: 768px) {
     .about {
         flex-direction: column;
         padding-bottom: 3rem;
         margin-top: 3rem;
+        height: auto; /* Allow height to adjust automatically */
     }
 
     .about-sect {
@@ -89,9 +92,9 @@
     }
 
     .about-imag {
-        width: 300px;
-        height: 300px;
-        margin-top: 0;
+        width: 350px;
+        height: 350px; /* Increase the image size */
+        margin-top: 20px;
     }
 
     .text {
@@ -102,12 +105,13 @@
     }
 
     .about-text {
-        font-size: 2rem;
+        font-size: 2.5rem; /* Increase the font size */
     }
 
     .about-text p {
-        font-size: 1.2rem;
+        font-size: 1.5rem; /* Increase paragraph text size */
         font-weight: 300;
+        line-height: 1.6; /* Improve line height for readability */
     }
 
     .link-icon {
@@ -117,10 +121,12 @@
     }
 
     .link-icon a {
-        margin: 0 10px;
-        font-size: 30px;
+        margin: 0 12px; /* Increase space between icons */
+        font-size: 35px; /* Increase icon size */
     }
 }
+
+/* Tablet Styles */
 @media screen and (max-width: 1024px) {
     .about {
         flex-direction: column;
@@ -151,6 +157,8 @@
         font-size: 1.5rem;
     }
 }
+
+/* Desktop Styles */
 @media screen and (min-width: 1024px) {
     .about {
         display: flex;
@@ -172,6 +180,7 @@
     .text {
         width: 60%;
         margin-top: 0;
+        text-align: left;
     }
 
     .about-text {
@@ -179,7 +188,7 @@
     }
 
     .about-text p {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: 400;
     }
 
