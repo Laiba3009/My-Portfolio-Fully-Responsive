@@ -15,8 +15,8 @@ function Hero(){
         <div className='hero'> 
       <Image className="hero-imag" src={"/image/hero.png"} 
        alt="hero image" 
-       width={550}
-       height={500}
+       width={450}
+       height={400}
         />
         
         <div className="center-text">

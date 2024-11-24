@@ -145,7 +145,7 @@
 }
 
 /* Large Screens (width >= 1024px) */
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 480px) {
     .box-cont {
         display: flex;
         flex-wrap: wrap;
@@ -167,4 +167,8 @@
     .box p {
         font-size: 17px;
     }
+    .project-item {
+        width: 100%; 
+        margin-bottom: 15px;
+      }
 }

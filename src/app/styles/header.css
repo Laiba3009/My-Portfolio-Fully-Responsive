@@ -1,166 +1,136 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Layout */
 .header {
-    width: 100%;
-    height: 80px;
-    background-color: dodgerblue;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+  width: 100%;
+  height: 80px;
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: space-between; /* Space between logo and the hamburger button */
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
+/* Logo */
+.Logo {
+  width: 110px;
+  height: 80px;
+}
+
+/* Navigation Container */
 .header-1 {
-    width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-grow: 1;
 }
 
+/* Menu Toggle (Hamburger) */
+.menu-toggle {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  display: none; /* Hide by default on large screens */
+  position: absolute;
+  right: 20px; /* Move the hamburger menu to the right */
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the button */
+}
+
+/* Navigation Links (for large screens) */
 .header-link {
-    display: flex;
-    justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .header-link li {
-    list-style-type: none;
-    font-weight: 600;
+  padding: 20px;
+  text-align: center;
 }
 
 .nav-link {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    padding: 10px;
+  color: dodgerblue;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .nav-link:hover {
-    color: white;
-    font-size: 18px;
-    transition: all .40s ease;
+  color: black;
 }
 
-.Logo {
-    width: 150px;
-    height: 150px;
+/* Sidebar (Side Navbar) */
+.side-navbar {
+  width: 50%; /* Sidebar width is 50% */
+  height: 100%; /* Full height */
+  position: fixed;
+  top: 0;
+  left: -50%; /* Initially off-screen */
+  transition: left 0.3s ease; /* Smooth transition */
+  background-color: aliceblue;
+  padding-top: 80px; /* Add space from top to account for header */
+  z-index: 900;
 }
 
+/* Sidebar Open */
+.side-navbar.active {
+  left: 0; /* When active, move the sidebar into view */
+}
+
+/* Sidebar Links (column layout for mobile) */
+.side-navbar .header-link {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Links should be in a column */
+  align-items: center;
+  justify-content: flex-start; /* Align links to the top */
+  width: 50%;
+}
+
+.side-navbar .header-link li {
+  padding: 30px 35px 30px ;
+  margin-top: 35px;
+}
+
+.side-navbar .nav-link {
+  color: dodgerblue;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+  padding-left: 40px;
+}
+
+.side-navbar .nav-link:hover {
+  color: black;
+}
+
+/* Mobile Styles (for screens below 768px) */
 @media screen and (max-width: 768px) {
-    .header {
-        height: 70px;
-        padding: 0 15px;
-    }
+  .menu-toggle {
+    display: block; /* Show hamburger menu on mobile */
+  }
 
+  .header-link {
+    display: none; /* Hide the nav links on mobile */
+  }
 
+  .header-1 {
+    justify-content: flex-start;  /* Align the logo to the left */
+  }
 
-    .Logo {
-        width: 100px;
-        height: 100px;
-    }
-
-    .header-1 {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .nav-link {
-        font-size: 18px;
-        padding: 10px;
-    }
-
-    .nav-link:hover {
-        color: aliceblue;
-        font-size: 18px;
-        transition: all .40s ease;
-    }
-
-   
-}
-
-@media screen and (max-width: 1024px) {
-    .header {
-        height: 70px;
-        padding: 0 20px;
-    }
-
-    .header-link {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .nav-link {
-        font-size: 20px;
-    }
-
-    .Logo {
-        width: 120px;
-        height: 120px;
-    }
-
-    .header-1 {
-        width: 100%;
-    }
-
-    .header-link li {
-        font-size: 22px;
-    }
-
-    .nav-link:hover {
-        color: aliceblue;
-        font-size: 22px;
-        transition: all .40s ease;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .header {
-        height: 80px;
-        padding: 0 30px;
-    }
-
-    .header-link {
-        display: flex;
-        justify-content: space-evenly;
-        width: 50%;
-    }
-
-    .nav-link {
-        font-size: 20px;
-        font-weight: 600;
-    }
-
-    .Logo {
-        width: 150px;
-        height: 150px;
-    }
-
-    .nav-link:hover {
-        color: white;
-        font-size: 18px;
-        transition: all .40s ease;
-    }
-}
-@media screen and (max-width: 4780px) {
-    .header {
-        height: 80px;
-        padding: 0 30px;
-    }
-
-    .header-link {
-        display: flex;
-        justify-content: space-evenly;
-        width: 50%;
-    }
-    .nav-link {
-        font-size: 20px;
-        font-weight: 600;
-    }
-
-    .Logo {
-        width: 150px;
-        height: 150px;
-    }
-
-    .nav-link:hover {
-        color: white;
-        font-size: 18px;
-        transition: all .40s ease;
-    }
+  /* Sidebar should be full width on mobile */
+  .side-navbar {
+    width: 50%; /* Full width on mobile */
+  }
 }
