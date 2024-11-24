@@ -86,7 +86,8 @@
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: #e0f7fa;
+  color: dodgerblue;
 }
 
 /* Media Queries for responsiveness */
@@ -97,13 +98,16 @@
     flex-direction: column;
     text-align: center;
     padding: 10px;
+    margin-top: 50px ;
+    width: 70% ;
+    height: auto;
+
   }
 
   .hero-imag {
-    width: 80%;
+    width: 80% ;
     height: auto;
-    border-radius: 50%; /* Circular image */
-
+    border-radius: 50%;     
   }
 
   .center-text h1 {
@@ -116,10 +120,14 @@
 
   .btn {
     font-size: 1rem;
+    padding: 30px;
   }
 
   .link-icon a {
     font-size: 1.8rem;
+  }
+  .hero-sect{
+    width: 80%;
   }
 }
 
@@ -130,7 +138,7 @@
   }
 
   .hero-imag {
-    width: 70%;
+    width: 90%;
     height: auto;
   }
 

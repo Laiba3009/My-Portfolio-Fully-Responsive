@@ -1,18 +1,23 @@
+/* General Styles for About Section */
 .about {
     width: 100%;
-    height: 650px;
+    height: auto; /* Adjust height based on content */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px 20px;
+    background-color: #f4f4f4; /* Add background color for better contrast */
+    flex-wrap: wrap; /* Allows for wrapping of items on smaller screens */
 }
 
 .about-sect {
     width: 80%;
-    height: 400px;
+    height: auto; /* Auto height to adjust with content */
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row; /* Default layout for larger screens */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
 .about-imag {
@@ -20,95 +25,176 @@
     height: 500px;
     object-fit: cover;
     border-radius: 8px;
+    margin-right: 20px;
 }
 
 .text {
     width: 70%;
-    height: 300px;
+    height: auto;
     padding-right: 50px;
     margin-right: 3rem;
+    text-align: left; /* Text align left for larger screens */
 }
 
 .about-text {
-    display: flex;
-    justify-content: start;
-    align-items: center;
     font-size: 3rem;
-    margin: 2rem;
+    margin: 2rem 0;
 }
 
 .about-text p {
     font-size: 2rem;
     font-weight: 400;
-    padding: 10px;
+    padding: 10px 0;
+    line-height: 1.6;
 }
 
 .link-icon {
-    width: 300px;
-    height: 20px;
-    padding: 20px;
+    display: flex;
+    justify-content: start;
+    margin-top: 20px;
 }
 
-.git-icon,
-.insta-icon,
-.facebook-icon {
+.link-icon a {
+    margin-right: 15px;
     font-size: 40px;
-    padding-right: 10px;
     transition: transform 0.3s ease;
 }
 
-.git-icon:hover,
-.insta-icon:hover,
-.facebook-icon:hover {
-    transform: scale(1.2);
+.link-icon a:hover {
+    transform: scale(1.2); /* Hover effect for icons */
 }
 
 .git-icon {
     color: black;
+    font-size: 35px;
 }
 
 .insta-icon {
     color: crimson;
+    font-size: 35px;
+
 }
 
 .facebook-icon {
     color: rgb(50, 50, 228);
+    font-size: 35px;
+
 }
+
+/* Mobile Styles (max-width: 768px) */
 @media screen and (max-width: 768px) {
     .about {
-        flex-direction: column;
-        padding-bottom: 3rem;
-        margin-top: 3rem;
-        height: auto; 
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: center;
+        height: auto;
+        width: 90%;
+        padding: 20px;
+        background-color: #e0f7fa; /* Change background for better contrast */
     }
 
     .about-sect {
-        padding: 10px;
+        flex-direction: column; /* Stack the image and text on top of each other */
+        align-items: center;
+        width: 70%;
+    }
+
+    .about-imag {
+        width: 350px; /* Adjust image size for mobile */
+        height: 350px;
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    .text {
+        width: 60%; /* Adjust text width */
+        margin-top: 20px;
+        text-align: center; /* Center-align text on mobile */
+    }
+
+    .about-text {
+        font-size: 2.5rem; /* Adjust font size */
+    }
+
+    .about-text p {
+        font-size: 1.5rem; /* Adjust font size for mobile */
+    }
+
+    .link-icon {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .link-icon a {
+        font-size: 35px; /* Reduce icon size for mobile */
+    }
+}
+
+/* Tablet Styles (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .about {
+        flex-direction: column; /* Stack on smaller tablet screens */
+        padding-bottom: 3rem;
+    }
+
+    .about-sect {
+        padding: 20px;
         flex-direction: column;
         align-items: center;
     }
 
     .about-imag {
-        width: 350px;
-        height: 350px; 
-        margin-top: 20px;
+        width: 400px; /* Adjust image size for tablet */
+        height: 400px;
     }
 
     .text {
-        width: 80%;
-        margin: 20px auto;
-        padding-right: 0;
-        text-align: center;
+        width: 80%; /* Adjust text width for tablets */
+        text-align: center; /* Center-align text for tablets */
     }
 
     .about-text {
-        font-size: 2.5rem; 
+        font-size: 2.5rem; /* Adjust font size */
     }
 
     .about-text p {
-        font-size: 1.5rem;
-        font-weight: 300;
-        line-height: 1.6; 
+        font-size: 1.6rem;
+    }
+}
+
+/* Small Devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .about {
+        flex-direction: column; /* Stack everything vertically */
+        padding: 20px 10px;
+    }
+
+    .about-sect {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-imag {
+        width: 100%; /* Make image full width */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px;
+    }
+
+    .text {
+        width: 100%; /* Make text take full width */
+        margin-top: 20px;
+        text-align: center; /* Center-align text on small screens */
+    }
+
+    .about-text {
+        font-size: 2.5rem; /* Adjust title size for better readability */
+        margin-top: 20px;
+    }
+
+    .about-text p {
+        font-size: 1.4rem; /* Adjust paragraph font size */
+        font-weight: 400;
+        padding: 0 10px;
     }
 
     .link-icon {
@@ -118,84 +204,7 @@
     }
 
     .link-icon a {
-        margin: 0 12px; 
-        font-size: 35px; 
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .about {
-        flex-direction: column;
-        padding-bottom: 3rem;
-    }
-
-    .about-sect {
-        padding: 20px;
-        flex-direction: column;
-    }
-
-    .about-imag {
-        width: 350px;
-        height: 350px;
-    }
-
-    .text {
-        width: 75%;
-        margin-top: 20px;
-        padding-right: 0;
-    }
-
-    .about-text {
-        font-size: 2.5rem;
-    }
-
-    .about-text p {
-        font-size: 1.5rem;
-    }
-}
-@media screen and (max-width: 427px) {
-    .about {
-        display: flex;
-        flex-direction: column;
-        padding: 20px 10px;
-    }
-
-    .about-sect {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .about-imag {
-        width: 500px;
-        height: 500px;
-        margin-bottom: 40px;
-    }
-
-    .text {
-        width: 100%;
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    .about-text {
-        font-size: 3rem;
-        margin-top: 90px;
-    }
-
-    .about-text p {
-        font-size: 1.5rem;
-        font-weight: 400;
-    }
-
-    .link-icon {
-        display: flex;
-        justify-content: flex-start;
-        margin-top: 20px;
-    }
-
-    .link-icon a {
         margin-right: 15px;
-        font-size: 40px;
+        font-size: 30px; /* Decrease icon size on very small screens */
     }
 }

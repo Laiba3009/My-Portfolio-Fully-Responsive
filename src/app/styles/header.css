@@ -118,7 +118,9 @@
 /* Mobile Styles (for screens below 768px) */
 @media screen and (max-width: 768px) {
   .menu-toggle {
-    display: block; /* Show hamburger menu on mobile */
+    display: block;
+    margin-right: 25px;
+    font-size: 35px; /* Show hamburger menu on mobile */
   }
 
   .header-link {
@@ -133,4 +135,15 @@
   .side-navbar {
     width: 50%; /* Full width on mobile */
   }
+  .header{
+    padding: 0;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 480px) {
+.Logo{
+  width: 90px;
+  height: 70px;
+}
+
 }

@@ -7,7 +7,7 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
-    margin: 2rem;
+    margin-right: 40px;
 }
 
 .pro-text {
@@ -18,6 +18,7 @@
     margin-top: 3rem;
     padding-top: 40px;
     font-family: sans-serif;
+    margin-right: 40px;
 }
 
 .box {
@@ -79,7 +80,8 @@
 @media screen and (max-width: 768px) {
     .pro-text {
         font-size: 2rem;
-        margin-top: 50px;
+        margin-top: 80px;
+
     }
 
     .box-cont {
@@ -87,14 +89,17 @@
         align-items: center;
         height: auto;
         margin-top: 2rem;
+        width: 70%;
     }
 
     .box {
-        width: 90%;
-        height: auto; /* Allow box height to adjust dynamically */
-        margin: 10px 0;
+        width: 340px;
+        height: 430px; /* Allow box height to adjust dynamically */
+        margin-right: 50px;
         background-color: none;
-        padding: 20px; /* Add padding inside the box for content spacing */
+        padding: 20px;
+        width: 250px;
+        height: 360px; /* Add padding inside the box for content spacing */
     }
 
     .box:hover {
@@ -149,19 +154,20 @@
     .box-cont {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
     }
 
     .box {
-        width: 370px;
-        height: 500px;
+        width: 350px;
+        height: 400px;
         margin: 15px;
         transition: all .4s ease;
+        margin-right: 50px;
     }
 
     .box:hover {
-        height: 520px;
+        height: 420px;
     }
 
     .box p {
