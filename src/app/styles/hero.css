@@ -32,14 +32,14 @@ margin-top: 50px;
 
 .hero-imag {
   object-fit: cover;
-  max-width: 100%;
+  width:450px ;
+  height: 400px;
   height: auto;
 }
 
 /* Centering text */
 .center-text {
-  max-width: 600px;
-  margin-left: 20px;
+  width: 600px;
   color: #333;
 }
 
@@ -100,13 +100,15 @@ margin-top: 50px;
     text-align: center;
     padding: 10px;
     margin-top: 50px ;
-    width: 70% ;
+    width: 90% ;
     height: auto;
-
+  }
+  .center-text {
+    width: 400px;
   }
 
   .hero-imag {
-    width: 80% ;
+    width: 90%;
     height: auto;
     border-radius: 50%;     
   }
@@ -128,7 +130,8 @@ margin-top: 50px;
     font-size: 1.8rem;
   }
   .hero-sect{
-    width: 80%;
+    margin-top: 60px;
+    width: 90%;
   }
 }
 

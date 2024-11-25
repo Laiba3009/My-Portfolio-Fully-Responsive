@@ -80,7 +80,8 @@
 @media screen and (max-width: 768px) {
     .pro-text {
         font-size: 2rem;
-        margin-top: 80px;
+        margin-top: 60px;
+        padding-right: 40px;
 
     }
 
@@ -93,17 +94,16 @@
     }
 
     .box {
-        width: 340px;
-        height: 430px; /* Allow box height to adjust dynamically */
+        width: 300px;
+        height: 400px; /* Allow box height to adjust dynamically */
         margin-right: 50px;
         background-color: none;
-        padding: 20px;
-        width: 250px;
-        height: 360px; /* Add padding inside the box for content spacing */
+        padding: 10px;
+        /* Add padding inside the box for content spacing */
     }
 
     .box:hover {
-        height: auto; /* Allow box height to expand on hover */
+        height: 420px; /* Allow box height to expand on hover */
     }
 
     .box-nam {
@@ -159,9 +159,9 @@
     }
 
     .box {
-        width: 350px;
+        width: 300px;
         height: 400px;
-        margin: 15px;
+        margin-top: 15px;
         transition: all .4s ease;
         margin-right: 50px;
     }

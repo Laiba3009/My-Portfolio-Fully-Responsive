@@ -95,18 +95,18 @@
     .about-sect {
         flex-direction: column; /* Stack the image and text on top of each other */
         align-items: center;
-        width: 70%;
+        width: 80%;
     }
 
     .about-imag {
-        width: 350px; /* Adjust image size for mobile */
-        height: 350px;
+        width: 450px; /* Adjust image size for mobile */
+        height: 450px;
         margin-top: 20px;
         align-items: center;
     }
 
     .text {
-        width: 60%; /* Adjust text width */
+        width: 70%; /* Adjust text width */
         margin-top: 20px;
         text-align: center; /* Center-align text on mobile */
     }
@@ -175,9 +175,10 @@
     }
 
     .about-imag {
-        width: 100%; /* Make image full width */
-        height: auto; /* Maintain aspect ratio */
+        width: 350px; /* Make image full width */
+        height: 350px; /* Maintain aspect ratio */
         margin-bottom: 20px;
+        padding-right: 70px;
     }
 
     .text {
