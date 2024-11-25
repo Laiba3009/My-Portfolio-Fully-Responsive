@@ -1,23 +1,22 @@
-/* General Styles for About Section */
 .about {
     width: 100%;
-    height: auto; /* Adjust height based on content */
+    height: auto; 
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px 20px;
-    background-color: #f4f4f4; /* Add background color for better contrast */
-    flex-wrap: wrap; /* Allows for wrapping of items on smaller screens */
+    background-color: #f4f4f4; 
+    flex-wrap: wrap; 
 }
 
 .about-sect {
     width: 80%;
-    height: auto; /* Auto height to adjust with content */
+    height: auto; 
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row; /* Default layout for larger screens */
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    flex-direction: row; 
+    flex-wrap: wrap; 
 }
 
 .about-imag {
@@ -33,7 +32,7 @@
     height: auto;
     padding-right: 50px;
     margin-right: 3rem;
-    text-align: left; /* Text align left for larger screens */
+    text-align: left; 
 }
 
 .about-text {
@@ -61,7 +60,7 @@
 }
 
 .link-icon a:hover {
-    transform: scale(1.2); /* Hover effect for icons */
+    transform: scale(1.2); 
 }
 
 .git-icon {
@@ -80,43 +79,41 @@
     font-size: 35px;
 
 }
-
-/* Mobile Styles (max-width: 768px) */
 @media screen and (max-width: 768px) {
     .about {
-        flex-direction: column; /* Stack elements vertically on small screens */
+        flex-direction: column; 
         align-items: center;
         height: auto;
         width: 90%;
         padding: 20px;
-        background-color: #e0f7fa; /* Change background for better contrast */
+        background-color: #e0f7fa; 
     }
 
     .about-sect {
-        flex-direction: column; /* Stack the image and text on top of each other */
+        flex-direction: column; 
         align-items: center;
         width: 80%;
     }
 
     .about-imag {
-        width: 450px; /* Adjust image size for mobile */
+        width: 450px; 
         height: 450px;
         margin-top: 20px;
         align-items: center;
     }
 
     .text {
-        width: 70%; /* Adjust text width */
+        width: 70%; 
         margin-top: 20px;
-        text-align: center; /* Center-align text on mobile */
+        text-align: center; 
     }
 
     .about-text {
-        font-size: 2.5rem; /* Adjust font size */
+        font-size: 2.5rem; 
     }
 
     .about-text p {
-        font-size: 1.5rem; /* Adjust font size for mobile */
+        font-size: 1.5rem; 
     }
 
     .link-icon {
@@ -125,14 +122,12 @@
     }
 
     .link-icon a {
-        font-size: 35px; /* Reduce icon size for mobile */
+        font-size: 35px; 
     }
 }
-
-/* Tablet Styles (max-width: 1024px) */
 @media screen and (max-width: 1024px) {
     .about {
-        flex-direction: column; /* Stack on smaller tablet screens */
+        flex-direction: column; 
         padding-bottom: 3rem;
     }
 
@@ -143,28 +138,26 @@
     }
 
     .about-imag {
-        width: 400px; /* Adjust image size for tablet */
+        width: 400px; 
         height: 400px;
     }
 
     .text {
-        width: 80%; /* Adjust text width for tablets */
-        text-align: center; /* Center-align text for tablets */
+        width: 80%;
+        text-align: center; 
     }
 
     .about-text {
-        font-size: 2.5rem; /* Adjust font size */
+        font-size: 2.5rem;
     }
 
     .about-text p {
         font-size: 1.6rem;
     }
 }
-
-/* Small Devices (max-width: 480px) */
 @media screen and (max-width: 480px) {
     .about {
-        flex-direction: column; /* Stack everything vertically */
+        flex-direction: column;  
         padding: 20px 10px;
     }
 
@@ -175,25 +168,25 @@
     }
 
     .about-imag {
-        width: 350px; /* Make image full width */
-        height: 350px; /* Maintain aspect ratio */
+        width: 350px; 
+        height: 350px; 
         margin-bottom: 20px;
         padding-right: 70px;
     }
 
     .text {
-        width: 100%; /* Make text take full width */
+        width: 100%; 
         margin-top: 20px;
-        text-align: center; /* Center-align text on small screens */
+        text-align: center; 
     }
 
     .about-text {
-        font-size: 2.5rem; /* Adjust title size for better readability */
+        font-size: 2.5rem; 
         margin-top: 20px;
     }
 
     .about-text p {
-        font-size: 1.4rem; /* Adjust paragraph font size */
+        font-size: 1.4rem; 
         font-weight: 400;
         padding: 0 10px;
     }
@@ -206,6 +199,6 @@
 
     .link-icon a {
         margin-right: 15px;
-        font-size: 30px; /* Decrease icon size on very small screens */
+        font-size: 30px; 
     }
 }
