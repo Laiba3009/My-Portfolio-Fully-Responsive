@@ -93,12 +93,14 @@
         flex-direction: column; 
         align-items: center;
         width: 80%;
+        margin-top: 40px;
+
     }
 
     .about-imag {
         width: 450px; 
         height: 450px;
-        margin-top: 20px;
+        margin-top: 40px;
         align-items: center;
     }
 

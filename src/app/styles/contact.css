@@ -1,3 +1,4 @@
+
 .contact {
     display: flex;
     justify-content: center;
@@ -73,12 +74,13 @@ textarea {
         flex-direction: column;
         padding: 0 10px;
         height: 500px ;  
-      margin-right: 50px;
+        margin-right: 50px;
       }
 
     .form-cont {
         width: 60%;  
         height: auto;
+        margin-top: 80px;
     }
 
     .con-tittle {
@@ -95,6 +97,7 @@ textarea {
         width: 80%;  
         font-size: 18px;
         padding: 12px 10px;
+        margin-bottom: 60px;
     }
 
     input, textarea {
